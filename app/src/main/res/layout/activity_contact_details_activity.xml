@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactDetails_activity">
+
+    <ImageView
+        android:id="@+id/detailsDPID"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/usericon"
+        android:layout_gravity="center"
+        android:layout_marginTop="60sp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/nameTVID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:hint="Name"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="25sp"
+        android:paddingLeft="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="40sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="15sp">
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/call"
+            android:scaleType="fitXY"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText
+            android:id="@+id/phoneETID"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:hint="Phone"
+            android:paddingLeft="10dp"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5sp"
+        android:paddingRight="15sp">
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/mail"
+            android:scaleType="fitXY"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText
+            android:id="@+id/emailETID"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150sp"
+        android:padding="15sp">
+
+        <Button
+            android:id="@+id/updatebtnID"
+            android:layout_width="100sp"
+            android:layout_height="45sp"
+            android:text="Save"
+            android:textSize="20sp"
+            android:background="@drawable/customize_edittext"/>
+
+        <Button
+        android:id="@+id/deletebtnID"
+        android:layout_width="100sp"
+        android:layout_height="45sp"
+        android:text="DELETE"
+            android:textSize="20sp"
+        android:layout_marginLeft="40sp"
+        android:background="@drawable/customize_edittext"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/CreatecontactID"
+        android:title="Create contact"
+        app:showAsAction="never"/>
+    <item
+        android:title="Sort by"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/SortbyAlphaID"
+                android:title="Alphabetically"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/SortbyTimeID"
+                android:title="Time"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+
+
+
+</menu>
